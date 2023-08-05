@@ -1,8 +1,8 @@
 <?php
 require_once('connection.php');
 
-$from	= $_REQUEST['from'];
-$to		= $_REQUEST['to'];
+$from	= $_REQUEST['tgl_awal'];
+$to		= $_REQUEST['tgl_akhir'];
 $sql	= "SELECT * FROM transaksi WHERE (tanggal >= '$from') AND (tanggal <= '$to') ORDER BY transaksi_id DESC";
 //echo $sql; die();
 
